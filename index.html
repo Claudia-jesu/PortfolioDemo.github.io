@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
 
+        /* Main container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        /* Section headers styling */
+        h2, h3 {
+            color: #4A90E2;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        /* Student Info Section */
+        #student-info {
+            background-color: #e9f0fb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for each student info item */
+        #student-info p {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+
+        /* Lab and Theory Reflections Section */
+        #reflections {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        #reflections p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        /* Button styling */
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            background-color: #4A90E2;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #357ab7;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            button {
+                width: 100%;
+                padding: 12px 0;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- First Section: Student Information -->
+        <section id="student-info">
+            <h2>Student Information</h2>
+            <p><strong>Name:</strong> Claudia Jesuraj</p>
+            <p><strong>Course:</strong> Design and Analysis of Algorithms</p>
+            <p><strong>Course Instructor:</strong> KMMR Sir</p>
+           
+            <p><strong>University:</strong> KLE Technological University</p>
+          <p><strong>About Portfolio:</strong> Lab and theory reflections</p>
+        </section>
+
+        <!-- Second Section: Lab and Theory Reflections -->
+        <section id="reflections">
+            <h2>Lab and Theory Reflections</h2>
+            <p>Reflection on the lab and theory will be provided after the course completion.</p>
+
+            <h3>Click on the buttons below</h3>
+            <div class="buttons">
+                <button onclick="alert('Lab Reflections button clicked!')">Lab Reflections</button>
+                <button onclick="alert('Theory Reflections button clicked!')">Theory Reflections</button>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
