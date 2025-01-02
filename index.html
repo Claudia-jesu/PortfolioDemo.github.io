@@ -3,123 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Information</title>
+    <title>VINCITY Plan</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"> <!-- Changed font to Poppins -->
     <style>
-        /* General body styling */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7fc;
-            color: #333;
+            background: linear-gradient(to bottom right, #a8c0ff, #3faffa);
+            color: #4a4a4a;
+            line-height: 1.6;
         }
-
-        /* Main container */
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            background-color: white;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
         }
-
-        /* Section headers styling */
-        h2, h3 {
-            color: #4A90E2;
-            font-size: 1.8em;
-            margin-bottom: 10px;
+        h1 {
+            font-size: 3rem;
+            color: #003366;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
         }
-
-        /* Student Info Section */
-        #student-info {
-            background-color: #e9f0fb;
-            padding: 15px;
-            border-radius: 8px;
+        h2 {
+            font-size: 2rem;
+            color: #003366;
+            background-color: #f3e05d;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-
-        /* Styling for each student info item */
-        #student-info p {
-            font-size: 1.1em;
-            margin: 5px 0;
+        section {
+            margin: 30px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1000px;
+            color: #333;
         }
-
-        /* Lab and Theory Reflections Section */
-        #reflections {
-            background-color: #ffffff;
-            padding: 15px;
-            border-radius: 8px;
+        ul, dl {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
         }
-
-        #reflections p {
-            font-size: 1.1em;
-            margin-bottom: 15px;
+        dt {
+            font-weight: 500;
+            margin-top: 10px;
         }
-
-        /* Button styling */
-        .buttons {
-            margin-top: 20px;
-            display: flex;
-            gap: 10px;
+        dd {
+            margin-bottom: 10px;
         }
-
-        button {
-            background-color: #4A90E2;
-            color: white;
-            padding: 15px 30px;
-            font-size: 16px;
+        a {
+            color: #003366;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #005bb5;
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+            background: #003366;
             border: none;
-            border-radius: 5px;
+            border-radius: 15px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
         }
-
-        button:hover {
-            background-color: #357ab7;
-        }
-
-        /* Responsive design */
-        @media screen and (max-width: 768px) {
-            .container {
-                width: 90%;
-            }
-
-            button {
-                width: 100%;
-                padding: 12px 0;
-                font-size: 18px;
-            }
+        .btn:hover {
+            background: #005bb5;
+            opacity: 0.8;
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- First Section: Student Information -->
-        <section id="student-info">
-            <h2>Student Information</h2>
-            <p><strong>Name:</strong> Claudia Jesuraj</p>
-            <p><strong>Course:</strong> Design and Analysis of Algorithms</p>
-            <p><strong>Course Instructor:</strong> KMMR Sir</p>
-           
-            <p><strong>University:</strong> KLE Technological University</p>
-          <p><strong>About Portfolio:</strong> Lab and theory reflections</p>
-        </section>
+<h1>VINCITY</h1>
 
-        <!-- Second Section: Lab and Theory Reflections -->
-        <section id="reflections">
-            <h2>Lab and Theory Reflections</h2>
-            <p>Reflection on the lab and theory will be provided after the course completion.</p>
+<section>
+    <h2>Project Information</h2>
+    <dl>
+        <dt>Name:</dt>
+        <dd>Claudia Jesuraj</dd>
+        <dt>Course Name:</dt>
+        <dd>Design and Analysis of Algorithms</dd>
+        <dt>Course Code:</dt>
+        <dd>24ECSC205</dd>
+        <dt>Course Instructor:</dt>
+        <dd>KMMR Sir</dd>
+        <dt>University:</dt>
+        <dd>KLE Technological University, Hubballi-31</dd>
+        <dt>Portfolio Topic/Domain:</dt>
+        <dd>Lab and theory reflection</dd>
+    </dl>
+</section>
 
-            <h3>Click on the buttons below</h3>
-            <div class="buttons">
-                <a href="reflection/claudia_theory.html" class="btn">Theory</a>
-                <a href="reflection/claudia_lab.html" class="btn">Lab</a>
-            </div>
-        </section>
+<section>
+    <h2>Lab and Theory Reflections</h2>
+    <p>Click the buttons below to view the reflections:</p>
+    <div class="team-links">
+       
+        <a href="reflection/claudia-theory.html" target="_blank" class="btn">Theory</a>
+        <a href="reflection/claudia-lab.html" target="_blank" class="btn">Lab</a>
+        
     </div>
+</section>
 
 </body>
 </html>
